@@ -1,63 +1,446 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <title>Victor's Portfolio -Project</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
-        <header>
-            <nav>
-                <ul class="nav__links">
-                    <a href ="/index.html"><button>Home</button></a>
-                    <a href ="/projects.html"><button>Projects</button></a>
-                </ul>
-            </nav>
-            <li>Victor's Portfolio</li>
-            <a><button onclick="getHello()">Contact</button>
-            <div id="hello-container"></div></a>
-        </header>
+    <header>
+      <nav>
+        <div class="nav__links">
+          <a href="/index.html"><button>Home</button></a>
+          <a href="/projects.html"><button>Projects</button></a>
+        </div>
+      </nav>
+      <li>Victor's Portfolio</li>
+      <a
+        ><button onclick="getHello()">Contact</button>
+        <div id="hello-container"></div
+      ></a>
+    </header>
     <div id="content">
       <h1>Projects</h1>
-      <p>Here is a list of my projects that I have been working on and or completed in the last few years. 
+      <p>
+        Here is a list of my projects that I have been working on and or
+        completed in the last few years.
       </p>
-      <h2>Minecraft Map Projects</h2>
-      <h3>Castle Wars</h3>
-      <p>One of my recent Minecraft Mini-game maps I build. This map was a result of me experimenting with 
-          Minecraft added feature of Data Pack, a way of running commands more naturally in a Minecraft world. 
-          The data pack I added was a ore generator pack which allowed me to make ore, such as iron, gold and diamond, 
-          spawn at a constant rate that can be upgraded to spawn at a faster rate. This idea came from a mod and a plugin, but with 
-          Minecraft enabling users to being able to do stuff like this in the base game, I wanted to try if I could. Lucky it worked 
-          and the map is currently finish. This map gave me an excuse to make villager with custom trades, which with the usage of commands 
-          you can edit a mob to have these. 
-      </p>
-      <h3>Five Nights at Freddy Map Remake</h3>
-      <p>Since the famous indie game series came out I been wanting to remake FNAF into Minecraft without any mods. This is my third attempt 
-          making the map and probably the biggest changes I done. This map included textures pack, with sounds, basic AI, and allows multiplayer with players playing as the animatronic characters. 
-          Originally the map was a multiplayer experience where players control animatronics and the guard, where the guard objective is to survive the night, while the animatronic goal is to 
-          get into the office and jumpscare the guard. When I added AI now the things are harder for the Guard, now that the animatronics are always active, in some form. Even added a hardcore making 
-          the AI harder to predict. This updated verison of the map I was able to utlize the scoreboard commands which allow timer and other facts easier to make, reducing the amount of Command Blocks the map 
-          uses to work correctly.
-    <h2>Minecraft Modifications</h2>
-    <h3>Custom Weapons Mod</h3>
-    <p>In this mod I add in a lot of weapons, tool, and ores into Minecraft. This includes over 100 items and crafting recipes. About 5 new ores spawn in the world, including Ruby, Sapphire. I had fun making this mod 
-        and since this project started by me messing with a texture pack into becoming a mod. One of the builds of the mod includes a generated structure that could spawn the legendary sword Excalibur. However due to Minecraft constant updating that had to be remove temporary. 
-        Though this project is currently on a break, I am willing to go back into it and update it again hopefully adding more features. Like one of the items which I tried to implement was to obtain a sword 
-        once it breaks if you die with the sword the sword gets replace with a new sword. 
-    </p>
-    <h2>Java Projects</h2>
-    <h3>Fire Emblem: Valiant</h3>
-    <p>For my AP Computer Science final project we were task to work in pairs to make a side scrolling game, however me and partner wanted to take our project in a different direction. 
-        The direction we took was make a 2D plane, where we can move through the world and encounter enemies. We were only given 2 weeks to finish this, which means we weren't able to 
-        to implement all our ideas, but we did get 2D movement done, simple AI that allow the enemies to move closer to you when it was their time, a character select, and battle animations.
-        My personal contribution was the battle animations, start and character select screens, and the enemy AI. Our project was one of the best of our class. 
-    </p>
-    <h3>Unfinished Summer 2018 Project</h3>
-    <p>After finishing the last project I wanted to use the starter code to make another game. This project I focus more on getting better at sprite animation making original sprites, and implementing a player control battle system. 
-        The options were to attack and or defend. The AI of the enemy was also made where they had a random chance to attack and or defend. I started work on making an overworld map, but stop the project their and haven't pick it up since.
-    </p>
-      </p>
+      <br />
+      <br />
+      <br />
+      <div class="tab">
+        <br />
+        <button class="tablinks" onclick="openProject(event, 'MinecraftMap')">
+          Minecraft Map Projects
+        </button>
+        <button class="tablinks" onclick="openProject(event, 'MinecraftMod')">
+          Minecraft Modification Projects
+        </button>
+        <button class="tablinks" onclick="openProject(event, 'Java-Project')">
+          Java Projects
+        </button>
+        <br />
+        <br />
+      </div>
+
+      <div id="MinecraftMap" class="tabcontent">
+        <h1>Minecraft Map Projects</h1>
+        <p>
+          Before I knew anything about coding, I was very interested in making
+          mini-game maps in Minecraft. At first I played on Xbox 360 Edition of
+          Minecraft which was very limited and outdated compared to the PC
+          verison (now called Java Edition). So in order to recreate what the PC
+          was able to do using plugins, coding, and other resources, I had to
+          work with what Xbox 360 Edition offered. Which was only a in-game
+          system called redstone (basic wiring) to make my ideas possible. From
+          this experience I was able to learn a lot of problem solving
+          techniques and way of thinking that I later was able to used for map
+          building in Java Edition of Minecraft and later in my coding classes.
+          Two examples of my most recent projects is Castle Wars, and a
+          Minecraft remake, of the popular indie game Five Nights at Freddy's
+          made into Minecraft.
+        </p>
+        <br />
+        <div class="hyperlink">
+          <a href="#CastleWars">Castle Wars</a>
+          <a href="#FNAF">Five Night's at Freddy's Map Remake</a>
+        </div>
+        <br />
+        <br />
+        <div class="center-text">
+          <a id="CastleWars"></a>
+          <h2>Castle Wars</h2>
+        </div>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Fcastle_wars.png?v=1595982279710"
+          alt="Castle Wars Map"
+          class="center-image"
+        />
+        <p>
+          Castle Wars is a vanilla mini-game map I build in Minecraft. The idea
+          originally came from a mini-game called Bed Wars which is on most
+          popular Minecraft server one way or another. The concept is simple.
+          There are two teams, the objective is to collect resources, trade them
+          for materials and weapons, and cross the map to the other team castle
+          and destroy their beacon. Players have infinite lives while the beacon
+          isn't destroy, but if the team's beacon is destroy that team is on
+          their last lives. Team left alive at the end wins.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Fgenerator_room.png?v=1595983070816"
+          alt="Generator Room"
+          class="center-image"
+        />
+        <p>
+          One of the difficulty of the map is making the generator room. In this
+          room, player would be able to obtain ore gems from the blocks on the
+          ground and they would be able to go to the trader room to use them for
+          valuable items. These generators spawn in iron ingots, gold ingots, or
+          diamonds at a specific rate, depended on the level of the generator.
+          Each generator at the beginning of the game is set to level 1, or
+          level 0 and it up to the player to upgrade them based on the
+          requirement stated on the sign. They can be upgraded to the max level
+          which is level 4.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Femerald_island.png?v=1595983073718"
+          alt="Emerald Island"
+          class="center-image"
+        />
+        <p>
+          In addition to the generators in each castle, their are 5 islands
+          outside of both castles with diamond and emerald generators, each ores
+          are offered to trade stronger gear back in the trade room so for
+          players to be better equiped. They must build out to these islands. In
+          fact, in order for diamonds to spawn in the castle, you need diamonds
+          to get the generator to level 1, so it required for players to build
+          out in order to gain these ores. These generators upgrade depended on
+          time, every 5 minutes the diamond or emerald generators upgrade to the
+          next level, to a max of 4 levels.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Ftrader_room.png?v=1595983072941"
+          alt="Trader Room"
+          class="center-image"
+        />
+        <p>
+          The trader room is filled with the villager mob from vanilla
+          Minecraft, but what makes them different is the custom trades they
+          offer. Each villager theme is based on the items they give, and when
+          you hover over the villager with your crossheir they are named for the
+          items they are trading for. The different villager offer blocks,
+          weapons, tools, food, enchantments, and even potions. This was
+          possible as Minecraft allow users to edit almost all aspect of a mob.
+          With the villager since they are the only mob that can trade, we can
+          edit that part using a specific command. Each mob have their own
+          predicates and parameters. Villagers have trades, slimes have size,
+          you can even apply armor to zombies and skeletons. You can even turn
+          off the AI of any mob in the game. These are just a few examples how
+          Minecraft allows users to custom their game experience and allows
+          people to make maps like this.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Fmob_room.png?v=1595983073334"
+          alt="Mob Room"
+          class="center-image"
+        />
+        <p>
+          One of the unique aspects to my map, is a room where you can send over
+          mobs to the other team side to fight the enemy team. This can help
+          distract the team or even end up killing them, setting them back a few
+          paces. In the trader room there a villager that sell certain items
+          which can be used on these traders to get spawn eggs. These spawn eggs
+          range in difficulty of mob and the cost is appropriate for the
+          strength of the mob. Stronger mobs cost more. Once you buy your spawn
+          eggs you can drop them into hoppers at the end of the room, and they
+          will be send over to the other team side. Once they reach the other
+          team they will attack the other team and it up to the other team to
+          defeat their distraction.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Fbeacon.png?v=1595983073512"
+          alt="Beacon"
+          class="center-image"
+        />
+        <p>
+          This is what I called the Beacon of Life. This is sitting in the
+          throne in the back of the castle. The team has to protect their beacon
+          anyway possible, this includes, putting stronger blocks around the
+          beacon to make it harder for the other team to break it. Teams have to
+          find ways of breaking into the beacon throne and try to break before
+          times is up. However if teams are too slow the beacon will break
+          within time leaving all teams on their last life.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2Fdatapack.PNG?v=1595983162164"
+          alt="Data Pack"
+          class="center-image"
+        />
+        <p>
+          Everytime I build a map, I always try to use a new feature Minecraft
+          adds to help map builder make complicated maps. This feature is called
+          Data Packs. These Data Packs are able to let players run in-game
+          commands as the world runs. This feature allows players to add in new
+          advancements, dimensions, function, loop tables, predicates, crafting
+          recipes, structures, tags, world generation modifications, and biomes,
+          without any coding modifications. Minecraft commands are in a way a
+          coding language with each commands acting as a normal code statement.
+          I use the data pack to assist with the generators, all of them (You
+          can see key words like IronGenerator etc.). The way the generator
+          works is that if I spawn in a armor stand with a specific tag, the
+          data pack will detect it and depended on the level the armor stand is
+          set to, will spawn the ore at a rate using scoreboard commands as a
+          timer. However I needed to use in-map command blocks to help with
+          upgrading the generators. This honestly is a simple data pack, as it
+          my first. I am currently working on upgrading the data pack so I can
+          spawn it with a simple spawn egg and have the upgrade feature go a
+          little more smoothy without in-map command blocks assisting the
+          upgrading procress.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="center-text">
+          <a id="FNAF"></a>
+          <h2>Five Nights at Freddy Map Remake</h2>
+        </div>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FFNAF%20map.png?v=1595992875753"
+          alt="FNAF Map Remake"
+          class="center-image"
+        />
+        <p>
+          Five Nights at Freddy's Map Remake has been an ongoing project I been
+          working on since the series had came out. This project has span from
+          multiple tries of making the map, each time making the map I use
+          better techniques to complete my goals. This map project uses many
+          commands blocks and a resource pack that I made from stretch. The map
+          was original started as a multiplayer remake map where players became
+          the animatronics and attack the guard. Since then, I made a better
+          resource pack, updated textures and adding sounds effects from the
+          actually game. With this recent redo of the map I had added AI so that
+          the animatronics can still remain active even if a player isn't in
+          control, and this includes a hardcore mode, where the AI moves much
+          faster and less unpredictable.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FCharacter%20Select.png?v=1595992874823"
+          alt="Character Select"
+          class="center-image"
+        />
+        <p>
+          Once you exit the main hub, you head into this room where you can
+          customize the night, this specific side of the room includes the
+          character select. The options being the Night Guard, Freddy, Bonnie,
+          Chica, and Foxy. It important that their is always a Guard, as the
+          Guard starts the night when players are ready. Other players can
+          select one of the animatronics and they will get armor and be
+          teleported into the map when the game starts. The objective of the
+          guard is to survive until 6am (about 9 minutes in real life time, as
+          long as the original game) and the objective of the animatronic is to
+          end the night guard before 6am. If no one picks an animatronic it will
+          be replace by an AI armor stand and move on it own throughout the
+          night. If players don't pick an animatronic they will be put into
+          spectator mode, where they can teleport freely and can't interact with
+          the map. Just as a side note, in this room also includes the Phone
+          Call, which I voice acted for, which acts like a tutorial.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FAI%20Area.png?v=1595992874677"
+          alt="AI Area"
+          class="center-image"
+        />
+        <p>
+          On the other side of the character select is the AI side where players
+          can customize the AI of the animatronics. On the right side, you have
+          the option of turning off Freddy, Bonnie, Chica, Foxy, and a bonus
+          character Golden Freddy AI. Turning off the AI won't effect anything
+          if the players picks the character, as when a player chooses an
+          animatronic the AI is automatically turned off. On the left side, is
+          the button that activates hardcore mode, which makes the Freddy,
+          Bonnie, and Chica more active and unpredictable than a standard night.
+          As the creator of the map, it took me a good 8 attempts before beating
+          it for the first time. It definitly gives the map a much needed
+          difficulty boost. Hardcore mode can be activated while players are
+          animatronic, however it will not effect any player timers and
+          cooldowns as humans are already as unpredicable as it stands.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FOffice.png?v=1595992875282"
+          alt="Office"
+          class="center-image"
+        />
+        <p>
+          This is the office where the night guard is. Inside, like in the
+          original game, includes a poster of the main animatronics, some
+          children drawings and a course two blast doors and lights, with
+          companying buttons. Let not forget the most dangerous object in the
+          room, the fan. The guard also equiped with a camera, where they can
+          use to see the different areas of the map and keep taps on the
+          animatronics locations. Throughout the night every players knows the
+          power left in the office, it determined by the guard usage of doors,
+          lights, and the cameras, and what time it currently is, represented by
+          the green number above the hub bar.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FShow%20Stage.png?v=1595992875010"
+          alt="Show Stage"
+          class="center-image"
+        />
+        <p>
+          When the night starts, the animatronics begin off at the Show Stage,
+          the Guard can view the Show Stage using their camera. Also as a note
+          when the night starts and every time an interval of time passes titles
+          will appear announcing to all players that it the next hour. But as
+          the animatronics you also get a camera which tell you where you can
+          teleport next, moving you closer to the office. AI just run through
+          the map normally, but players have the option of being decisive when
+          they choose to move or attack.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FBonnie%20at%20Office.png?v=1595992874989"
+          alt="Bonnie Office"
+          class="center-image"
+        />
+        <p>
+          When the night goes on, animatronics will reach the office and it your
+          job to keep them out, before they get into your office and end your
+          night. Bonnie and Chica appear outside the office (like in the
+          picture) before they attack the guard. One cool feature I added in
+          this recent verison is that the animatronic will appear invisible when
+          they get to the office door, unless you use the lights to view them,
+          making it mandatory to use the lights to tell whether the animatronic
+          is in front of the office. However, it is noted that Freddy, works
+          different and doesn't appear in front of the door before he attacks
+          (like he does in the original game) and instead attack straight from
+          CAM 4B.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FFoxy%20Running.png?v=1595992874750"
+          alt="Foxy Running"
+          class="center-image"
+        />
+        <p>
+          The fourth animatronic, is Foxy and he works differently then the
+          others. He starts off in Pirate's Cove (CAM 1C) and if you don't watch
+          him on your camera, he will slowly leave the cove. If you neglect Foxy
+          long enough he will begin to run down the hallway right into your
+          office. New feature of the map, is that if Foxy's AI is on, an
+          animation of him running down the hallway can be seen. If you react
+          fast enough Foxy will bang on your door and steal a random amount of
+          power, but if you are too slow you will be greeted with a jumpscare.
+          This is why Foxy is incredible important to always keep watch of him,
+          to prevent him from slipping away and possibly messing with your
+          night. I'll also mention if you lose power in your office, you won't
+          be able to use the doors, lights, nor your camera. A sequence will
+          play where Freddy play a tune for you (like in the game), length of
+          the tune is randomize, and if you make it to 6am you win, but if you
+          don't Freddy will end your night.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FDoor%20and%20Lights.png?v=1595992874847"
+          alt="Door and Lights"
+          class="center-image"
+        />
+        <p>
+          When you press the red or white button you will turn on that sides
+          respective door or light. Which each second you have your doors or
+          lights on will drain your power more. So it recommended to only use
+          them wisely, say an animatronic is outside your office. These are your
+          only defense and messing up once will cost you your night, and you
+          will be taken to the game over screen. But don't worry no animatronic
+          can break down the door and they are 100% effective, that is unless
+          you run out of power.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FNew%20Threat.png?v=1595992875913"
+          alt="GF"
+          class="center-image"
+        />
+        <p>
+          In the original game, Golden Freddy is only an easter egg, however in
+          my map he a new threat and can be very annoying if you see him at the
+          wrong time. Only as an AI, Golden Freddy appears on CAM 2B, and can
+          pull you from your camera into the office and if you don't use your
+          camera again, he will end your night.
+        </p>
+        <img
+          src="https://cdn.glitch.com/83357138-8a96-4193-aaae-3c3f1ee07b6d%2FCommand%20Blocks.png?v=1595992875870"
+          alt="Command Blocks"
+          class="center-image"
+        />
+        <p>
+          This is the full map, showing all the command blocks. Command Blocks
+          act as a single statement of code for the map. Each one help make this
+          map possible, from the AI, starting the night, ending the night, and a
+          course reseting the map. For the first game I'm surprised how few
+          command blocks I used but compared to the previous FNAF maps I tried I
+          definitly saw the procress I made with my spacing and usage of command
+          blocks.
+        </p>
+      </div>
+      <div id="MinecraftMod" class="tabcontent">
+        <h1>Minecraft Modifications</h1>
+        <p>
+          Unlike building Minecraft Maps, Minecraft Modifications (Mods for short) involves coding and figuring out how java works. Lucky Minecraft is already a game coded in Java, so my issue was understanding how to actually 
+          code. So using tutorials on Youtube I began self teaching myself Java and building my first Minecraft Mod. From this exposure to Java I was able to understand and successed in my AP Computer Science course which I 
+          wouldn't take until my Junior year of High School. Since Minecraft is always updating I always try to keep my mod updated to the lastest verison, but as of right now, the lastest verison I have the mod is 
+          Minecraft Verison 1.14.4, which currently Minecraft is on 1.16.2. But here is my first mod I made, but the project is currently on hiatus.
+        </p>
+        <br />
+        <div class="hyperlink">
+          <a href="#Custom-Weapons">Custom Weapons Mod</a>
+        </div>
+        <br />
+        <br />
+        <div class="center-text">
+          <a id="Custom-Weapons"></a>
+          <h2>Custom Weapon Mod</h2>
+        </div>
+        <p>
+          In this mod I add in a lot of weapons, tool, and ores into Minecraft.
+          This includes over 100 items and crafting recipes. About 5 new ores
+          spawn in the world, including Ruby, Sapphire. I had fun making this
+          mod and since this project started by me messing with a texture pack
+          into becoming a mod. One of the builds of the mod includes a generated
+          structure that could spawn the legendary sword Excalibur. However due
+          to Minecraft constant updating that had to be remove temporary. Though
+          this project is currently on a break, I am willing to go back into it
+          and update it again hopefully adding more features. Like one of the
+          items which I tried to implement was to obtain a sword once it breaks
+          if you die with the sword the sword gets replace with a new sword.
+        </p>
+      </div>
+      <div id="Java-Project" class="tabcontent">
+        <h2>Java Projects</h2>
+        <h3>Fire Emblem: Valiant</h3>
+        <p>
+          For my AP Computer Science final project we were task to work in pairs
+          to make a side scrolling game, however me and partner wanted to take
+          our project in a different direction. The direction we took was make a
+          2D plane, where we can move through the world and encounter enemies.
+          We were only given 2 weeks to finish this, which means we weren't able
+          to to implement all our ideas, but we did get 2D movement done, simple
+          AI that allow the enemies to move closer to you when it was their
+          time, a character select, and battle animations. My personal
+          contribution was the battle animations, start and character select
+          screens, and the enemy AI. Our project was one of the best of our
+          class.
+        </p>
+        <h3>Unfinished Summer 2018 Project</h3>
+        <p>
+          After finishing the last project I wanted to use the starter code to
+          make another game. This project I focus more on getting better at
+          sprite animation making original sprites, and implementing a player
+          control battle system. The options were to attack and or defend. The
+          AI of the enemy was also made where they had a random chance to attack
+          and or defend. I started work on making an overworld map, but stop the
+          project their and haven't pick it up since.
+        </p>
+      </div>
     </div>
   </body>
 </html>
