@@ -1,7 +1,7 @@
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 850px;
 }
 title{
     color:white;
@@ -15,17 +15,33 @@ title{
 
 li, a, button {
     font-weight:500;
-    font-size:16px;
+    font-size:20px;
     color:white;
     list-style:none;
     text-decoration:none;
+}
+
+h1{
+  font-size: 25px;
+}
+
+h2{
+  font-size: 23px;
+}
+
+h3{
+  font-size: 21px;
+}
+
+p{
+  font-size: 19px;
 }
 
 .nav__links {
     list-style:none;
 }
 .nav__links li{
-    display: inline-block;
+    display: inline-flex;
     padding: 0px 20px;
 }
 
@@ -34,7 +50,47 @@ li, a, button {
 }
 
 .nav__links li a:hover{
-    color:cyan;
+    color: cyan;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #lightblue;
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.center-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.center-text{
+  text-align: center;
+}
+
+.hyperlink a{
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  background: green;
+  transition: all 0.3s;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 50%;
+  line-height: 50px;
+}
+
+.hyperlink a:hover{
+  background: lime;
 }
 
 button{
@@ -59,10 +115,11 @@ header{
 }
 
 body{
-    background-color: lime;
+    background-color: #3067FF;
     color:white;
 }
 
 #greeting-container {
   margin-top: 20px;
 }
+
